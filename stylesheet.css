@@ -3,7 +3,7 @@
 
 body, html{
 
-    background-image: url(simonbson.github.io/images/main.jpg);
+    background-image: url(/images/main.jpg);
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
