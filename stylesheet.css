@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+body, html{
+
+    background-image: url(/frontimage/images/main.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow-x: hidden;
+
+}
+.headline{
+
+    font-size: calc(50px + 5vw);
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-top: 10vh;
+    transition: all 0.5s;
+
+}
+/*continue button animation*/
+.continuebutton {
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: transparent;
+    position: absolute;
+    top: calc(25vh + 1);
+    left: 50%;
+    font-size: calc(25px + 1vw);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    border-radius: 30px;
+    margin: 10vh 2px;
+    transition: all 0.5s;
+}
+
+.continuebutton:hover{
+
+    font-size: calc(30px + 1vw);
+
+}
+
+.imagecredit{
+
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+
+}
+/* end continuebutton */
+
+/*info boxes*/
+
+.infocontainer{
+    width: 100%;
+    position: absolute;
+    top: 55vh;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.5s;
+}
+
+.infoChild{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 5vw;
+    color: black;
+    position: relative;
+    cursor: pointer;
+
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.infoChild span{
+    position: absolute;
+    width: 100%;
+    padding-top: 5px;
+    left: 0;
+    font-size: 30px;
+
+}
+
+.infoChild p{
+    padding-top: 25px;
+    top: 50%;
+    font-size: 20px;
+
+}
+
+/* end info boxes */
+
+/*store boxes*/
+.storecontainer{
+    width: 100%;
+    position: absolute;
+    top: 55vh;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.5s;
+}
+
+.storeChild{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 5vw;
+    color: black;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.storeChild span{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 30px;
+
+}
+
+.storeChild button{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20%;
+
+}
+
+.storeChild button:hover{
+
+    background-color: white;
+
+}
+.storeChild img{
+
+    width: 300px;
+    height: 250px;
+    bottom: 5px;
+
+}
+
+.storetoolbar{
+
+    font-family: 'PT Sans', sans-serif;
+    position: fixed;
+    top: 5px;
+    right: 25px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+
+}
+.storetoolbar span{
+
+    color: black;
+    cursor: pointer;
+
+}
+
+.storetoolbar:hover .storetoolbarhidden{
+
+    position: fixed;
+    display: block;
+
+}
+.storetoolbarhidden {
+
+    font-family: 'PT Sans', sans-serif;
+
+    display: none;
+    position: relative;
+    width: 150px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding: 12px 16px;
+}
+
+.storetoolbarhidden span{
+
+    color: black;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+
+}
+
+.storetoolbarhidden a{
+
+    color: black;
+    cursor: pointer;
+}
+
+.storetoolbarhidden a:hover{
+
+    cursor: pointer;
+    text-decoration: line-through;
+
+}
+/* end store*/
+
+/* copy paste from https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }
+
+/* Special scrollbar */
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
