@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>  </title>
+		<title> Download </title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 	</head>
@@ -14,9 +14,13 @@
             loader.className += " hidden";
         });
 
-        function store(){
+        function download(){
             //document.getElementById("infocontent").innerHTML = "Hello";
-            window.open("store.html", "_parent","",true);
+            window.open("dwn.html", "_blank","",true);
+        }
+        function next(){
+            //document.getElementById("infocontent").innerHTML = "Hello";
+            window.open("final.html", "_parent","",true);
         }
 
     </script>
@@ -28,18 +32,16 @@
         </div>
 
         <div class="noselect">
-            <div class="headline"> Frågor </div>
-            <!--<button class="continuebutton" onclick="store();">browse store</button> -->
+            <div class="headline">  </div>
+            <button class="continuebutton" onclick="download();">download</button>
+            <br>
+            <br><br>
+            <br><br>
+            <br>
+            <button class="continuebutton" onclick="next();">next</button> 
         </div>
         
         <p id="infocontent"> </p>
-
-        <div class="infocontainer">
-            <div class="infoChild">
-                <span>  </span>
-                <p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPiCPnQT-evutldw_gIlRMBaCK78URViIAcQCRQKBCUarxWg/viewform?embedded=true" width="640" height="983" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </p>
-            </div>
 
         </div>
         <div class="imagecredit">
